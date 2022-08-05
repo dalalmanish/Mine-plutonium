@@ -6,6 +6,7 @@ router.get('/test-me', function (req, res) {
     console.log('My batch is', abc.name)
     abc.printName()
     res.send('My second ever api!')
+    res.send('My first day of node.js !')
 });
 
 
