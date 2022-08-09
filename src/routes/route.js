@@ -9,11 +9,18 @@ router.get('/test-me', function (req, res) {
 
     res.send('My second ever api!')
 });
-
-router.get('/students', function (req, res){
-    let students = ['Sabiha', 'Neha', 'Akash']
-    res.send(students)
+// #1
+router.get('/movies', function (req, res){
+    let movies = ['rang de basanti','the shining','lord of ring','batman begins']
+    res.send(movies)
 })
+// #4
+router.get('/films', function (req, res){
+    let film = [ { "id": 1,"name": "The Shining" }, {"id": 2, "name": "Incendies"}, {"id": 3,"name": "Rang de Basanti"}, {"id": 4,"name": "Finding Nemo"}]
+    res.send(film)
+})
+
+
 
 router.get('/student-details/:name', function(req, res){
     /*
